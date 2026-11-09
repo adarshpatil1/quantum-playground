@@ -14,3 +14,9 @@ def quantum_random(n_bits=8):
 if __name__ == "__main__":
     numbers = [quantum_random(8) for _ in range(10)]
     print("Ten quantum random numbers (0-255):", numbers)
+
+    import matplotlib.pyplot as plt
+    samples = [quantum_random(8) for _ in range(2000)]
+    plt.hist(samples, bins=16)
+    plt.title("Quantum random numbers (2000 samples)")
+    plt.show()
