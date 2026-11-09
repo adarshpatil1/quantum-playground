@@ -14,5 +14,5 @@ counts = result.get_counts()
 print(counts)           # only '00' and '11' should appear
 
 plot_histogram(counts)
-bell.draw("mpl")
+bell.draw("mpl", filename = "Bell Circuit.png")
 plt.show()
